@@ -29,6 +29,8 @@ class App extends Component {
   }
 
   handleAddTodo(todo) {
+    var data=JSON.stringify(this.state.Todos);
+    localStorage.setItem('data',data);
     this.setState({
       todos: [...this.state.todos, todo]
     })
@@ -46,7 +48,8 @@ class App extends Component {
               </span>
             </div>
             <div className="card-body">
-              {todo.description}
+              <p>{todo.description}</p>
+              <p><mark>Por: {todo.responsible}</mark></p>
             </div>
             <div className="card-footer">
               <button

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Boton from './boton'
 
 class TodoForm extends Component {
   constructor () {
@@ -78,9 +79,7 @@ class TodoForm extends Component {
               <option>high</option>
             </select>
           </div>
-          <button type="submit" className="btn btn-primary">
-            Save
-          </button>
+          <Boton />
         </form>
       </div>
     )
