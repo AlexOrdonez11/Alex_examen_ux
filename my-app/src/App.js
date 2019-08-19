@@ -1,26 +1,90 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navigator from './components/Navigator';
+import Image from './components/Image';
+import Like from './components/Like';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// data
+import { todos } from './Todos.json';
+
+// subcomponents
+import TodoForm from './components/TodoForm';
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      todos
+    }
+    this.handleAddTodo = this.handleAddTodo.bind(this);
+  }
+
+  removeTodo(index) {
+    this.setState({
+      todos: this.state.todos.filter((e, i) => {
+        return i !== index
+      })
+    });
+  }
+
+  handleAddTodo(todo) {
+    this.setState({
+      todos: [...this.state.todos, todo]
+    })
+  }
+
+  render() {
+    const todos = this.state.todos.map((todo, i) => {
+      return (
+        <div className="col-md-6" key={i}>
+          <div className="card mt-4">
+            <div className="card-title text-center">
+              <h3>{todo.title}</h3>
+              <span className="badge badge-pill badge-danger ml-2">
+                {todo.priority}
+              </span>
+            </div>
+            <div className="card-body">
+              {todo.description}
+            </div>
+            <div className="card-footer">
+              <button
+                className="btn btn-danger"
+                onClick={this.removeTodo.bind(this, i)}>
+                Delete
+              </button>
+              <Like/>
+            </div>
+          </div>
+        </div>
+      )
+    });
+
+    // RETURN THE COMPONENT
+    return (
+      <div className="App">
+
+        <Navigator />
+
+        <div className="container">
+          <div className="row mt-4">
+
+            <div className="col-md-4 text-center">
+              <Image/>
+              <TodoForm onAddTodo={this.handleAddTodo}></TodoForm>
+            </div>
+
+            <div className="col-md-8">
+              <div className="row">
+                {todos}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
