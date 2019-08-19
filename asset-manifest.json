@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Alex_examen_ux/my-app/static/css/main.4afeed8a.chunk.css",
-    "main.js": "/Alex_examen_ux/my-app/static/js/main.fbff013c.chunk.js",
-    "main.js.map": "/Alex_examen_ux/my-app/static/js/main.fbff013c.chunk.js.map",
-    "runtime~main.js": "/Alex_examen_ux/my-app/static/js/runtime~main.e7bd1321.js",
-    "runtime~main.js.map": "/Alex_examen_ux/my-app/static/js/runtime~main.e7bd1321.js.map",
-    "static/js/2.aa7ca273.chunk.js": "/Alex_examen_ux/my-app/static/js/2.aa7ca273.chunk.js",
-    "static/js/2.aa7ca273.chunk.js.map": "/Alex_examen_ux/my-app/static/js/2.aa7ca273.chunk.js.map",
-    "index.html": "/Alex_examen_ux/my-app/index.html",
-    "precache-manifest.6e93fdbdd0c7ca2a20a3d763a0910f52.js": "/Alex_examen_ux/my-app/precache-manifest.6e93fdbdd0c7ca2a20a3d763a0910f52.js",
-    "service-worker.js": "/Alex_examen_ux/my-app/service-worker.js",
-    "static/css/main.4afeed8a.chunk.css.map": "/Alex_examen_ux/my-app/static/css/main.4afeed8a.chunk.css.map",
-    "static/media/logo.svg": "/Alex_examen_ux/my-app/static/media/logo.446f4997.svg"
+    "main.css": "/Alex_examen_ux/static/css/main.4afeed8a.chunk.css",
+    "main.js": "/Alex_examen_ux/static/js/main.a74c93cf.chunk.js",
+    "main.js.map": "/Alex_examen_ux/static/js/main.a74c93cf.chunk.js.map",
+    "runtime~main.js": "/Alex_examen_ux/static/js/runtime~main.fbc5fb1d.js",
+    "runtime~main.js.map": "/Alex_examen_ux/static/js/runtime~main.fbc5fb1d.js.map",
+    "static/js/2.aa7ca273.chunk.js": "/Alex_examen_ux/static/js/2.aa7ca273.chunk.js",
+    "static/js/2.aa7ca273.chunk.js.map": "/Alex_examen_ux/static/js/2.aa7ca273.chunk.js.map",
+    "index.html": "/Alex_examen_ux/index.html",
+    "precache-manifest.90fe8c924c7a16a7fa50a7388198ada2.js": "/Alex_examen_ux/precache-manifest.90fe8c924c7a16a7fa50a7388198ada2.js",
+    "service-worker.js": "/Alex_examen_ux/service-worker.js",
+    "static/css/main.4afeed8a.chunk.css.map": "/Alex_examen_ux/static/css/main.4afeed8a.chunk.css.map",
+    "static/media/logo.svg": "/Alex_examen_ux/static/media/logo.446f4997.svg"
   }
 }
