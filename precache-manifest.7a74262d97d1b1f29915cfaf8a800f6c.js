@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86b3f2c0c6fc14fb3e0a80bba9bd8ed8",
+    "revision": "3d9741c75e775fd95222fffc7a11b08e",
     "url": "/Alex_examen_ux/index.html"
   },
   {
-    "revision": "1088b379cb2a9cdcb9c4",
+    "revision": "eaa9630ef9d04fda909c",
     "url": "/Alex_examen_ux/static/css/main.4afeed8a.chunk.css"
   },
   {
-    "revision": "aba83f746347d56661d3",
-    "url": "/Alex_examen_ux/static/js/2.aa7ca273.chunk.js"
+    "revision": "3cd03f7372058a4cd750",
+    "url": "/Alex_examen_ux/static/js/2.1e6f0c13.chunk.js"
   },
   {
-    "revision": "1088b379cb2a9cdcb9c4",
-    "url": "/Alex_examen_ux/static/js/main.a74c93cf.chunk.js"
+    "revision": "eaa9630ef9d04fda909c",
+    "url": "/Alex_examen_ux/static/js/main.e132ff0e.chunk.js"
   },
   {
     "revision": "35683a6e087644b599e5",
