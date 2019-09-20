@@ -4,12 +4,16 @@ import './App.css';
 import Navigator from './components/Navigator';
 import Image from './components/Image';
 import Like from './components/Like';
+import firebase from "firebase"
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
+
+
 
 // data
 import { todos } from './Todos.json';
 
 // subcomponents
-import TodoForm from './components/TodoForm';
+//import TodoForm from './components/TodoForm';
 
 class App extends Component {
   constructor() {
@@ -63,22 +67,12 @@ class App extends Component {
         </div>
       )
     });
-
     // RETURN THE COMPONENT
     return (
       <div className="App">
-
-        <Navigator />
-
         <div className="container">
-          <div className="row mt-4">
-
-            <div className="col-md-4 text-center">
-              <Image/>
-              <TodoForm onAddTodo={this.handleAddTodo}></TodoForm>
-            </div>
-
-            <div className="col-md-8">
+          <div className="row mt-10">
+            <div className="col-md-12">
               <div className="row">
                 {todos}
               </div>

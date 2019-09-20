@@ -6,7 +6,7 @@ class Image extends Component {
   render(){
     return(
       <div>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" />
         <br/>
         <br/>
       </div>
