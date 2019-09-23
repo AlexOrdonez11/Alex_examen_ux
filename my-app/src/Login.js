@@ -20,6 +20,17 @@ import {
     DropdownItem } from 'reactstrap';
 
 
+import{TecnologiaF,MoviesF,MusicF,NbaF,FutbolF,MundoF,NutricionF,MedicinaF} from './scraper.js';
+
+/*tecnologia.then(function(response){
+  try{
+    fs.unlinkSync('datos.json');
+    writeIT(response);
+  }catch(err){
+    writeIT(response);
+  }
+});*/
+
 
 firebase.initializeApp({
   apiKey: "AIzaSyAP2u67JMm-_4I2gPBZkJGT5K3gTCo0x9Y",
@@ -27,6 +38,7 @@ firebase.initializeApp({
 })
 
 class Login extends Component {
+
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
@@ -57,6 +69,7 @@ class Login extends Component {
     })
   }
 
+
   render() {
     return (
       <div>
@@ -81,20 +94,20 @@ class Login extends Component {
               </NavItem>
               <NavItem>
                 {this.state.isSignedIn ? (
-                  <h2 style={{margin: '10px 10px'}}>
+                  <h4 style={{margin: '10px 10px'}}>
                   {firebase.auth().currentUser.displayName}
-                  </h2>
+                  </h4>
                 ):(
                   <div> </div>
                 )}
               </NavItem>
               <NavItem>
                 {this.state.isSignedIn ? (
-                  <h2 style={{margin: '5px 10px'}}>
+                  <h2 style={{margin: '5px 5px'}}>
                   <img
                   src={firebase.auth().currentUser.photoURL}
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                   />
                   </h2>
                 ):(
@@ -102,19 +115,44 @@ class Login extends Component {
                 )}
               </NavItem>
               <NavItem>
-                <h2>
-                <NavLink href="/favorite/">Favorite</NavLink>
-                </h2>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success" onClick={TecnologiaF}>Tecnologia</button>
+                </div>
               </NavItem>
               <NavItem>
-                <h2>
-                <NavLink href="/trending/">Trending</NavLink>
-                </h2>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">Movies</button>
+                </div>
               </NavItem>
               <NavItem>
-                <h2>
-                <NavLink href="/global/">Global</NavLink>
-                </h2>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">Music</button>
+                </div>
+              </NavItem>
+              <NavItem>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">NBA</button>
+                </div>
+              </NavItem>
+              <NavItem>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">Football</button>
+                </div>
+              </NavItem>
+              <NavItem>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">Mundo</button>
+                </div>
+              </NavItem>
+              <NavItem>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">Nutricion</button>
+                </div>
+              </NavItem>
+              <NavItem>
+                <div style={{margin: '0px 3px'}}>
+                <button className="btn btn-success">Medicina</button>
+                </div>
               </NavItem>
             </Nav>
           </Collapse>
@@ -122,7 +160,6 @@ class Login extends Component {
         {this.state.isSignedIn ? (
           <BrowserRouter>
             <Route path component={App} />
-        
           </BrowserRouter>
         ):(
           <div className="login">

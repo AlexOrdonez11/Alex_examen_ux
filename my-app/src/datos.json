@@ -1,26 +1,3 @@
-{
-  "todos": [
-    {
-      "title": "Robo",
-      "responsible": "mark",
-      "description": "Roban tienda en el mall",
-      "priority": "low"
-    },
-    {
-      "title": "Asesinato",
-      "responsible": "ryan",
-      "description": "Asesinatoen calle peatonal",
-      "priority": "medium"
-    },
-    {
-      "title": "Gran cantidad de corrupcion",
-      "responsible": "joseph",
-      "description": "Corrupcion en honduras arruina el pais",
-      "priority": "high"
-    }
-  ]
-}
-
 {"todos": [
   {
     "titulo": "A 16-Week Vegan Diet Can Do Wonders for Your Gut Microbiome",

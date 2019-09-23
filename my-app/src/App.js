@@ -10,7 +10,7 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 
 
 // data
-import { todos } from './Todos.json';
+import { todos } from './datos.json';
 
 // subcomponents
 //import TodoForm from './components/TodoForm';
@@ -40,27 +40,32 @@ class App extends Component {
     })
   }
 
+/*  redigir(link){
+    location.href = link;
+    onclick={window.location.href = todo.link}
+    <l1>
+      <p><mark>{todo.img}</mark></p>
+    </l1>
+  }*/
+  /*var express = require('express');
+  var cors = require('cors');
+  var app = express();
+  app.use(cors());*/
+
+
   render() {
     const todos = this.state.todos.map((todo, i) => {
       return (
-        <div className="col-md-6" key={i}>
-          <div className="card mt-4">
-            <div className="card-title text-center">
-              <h3>{todo.title}</h3>
-              <span className="badge badge-pill badge-danger ml-2">
-                {todo.priority}
-              </span>
-            </div>
-            <div className="card-body">
-              <p>{todo.description}</p>
-              <p><mark>Por: {todo.responsible}</mark></p>
-            </div>
+        <div className="col-md-3" key={i}>
+          <div class="card">
+          <div class="card-image">
+            <img src = {todo.img}/>
+          </div>
+          <div className="card-content">
+            <p>{todo.titulo}</p>
+          </div>
             <div className="card-footer">
-              <button
-                className="btn btn-danger"
-                onClick={this.removeTodo.bind(this, i)}>
-                Delete
-              </button>
+            <button type="button" class="btn btn-success" onClick={()=>{window.open(todo.link)}}>Link</button>
               <Like/>
             </div>
           </div>

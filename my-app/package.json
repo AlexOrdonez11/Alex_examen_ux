@@ -4,14 +4,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "delete": "^1.1.0",
     "firebase": "^6.6.0",
+    "jsonfile": "^5.0.0",
+    "jsonfile-storage": "0.0.16",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-firebaseui": "^4.0.0",
     "react-google-login": "^5.0.5",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1",
-    "reactstrap": "^8.0.1"
+    "react-scripts": "^3.1.1",
+    "reactstrap": "^8.0.1",
+    "write-json-file": "^4.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
