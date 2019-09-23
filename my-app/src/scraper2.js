@@ -30,9 +30,7 @@ function tecnologia(){
         if (!error && response.statusCode == 200) {
           const $ = cheerio.load(html);
           var cont = 0;
-          console.log($);
           $('.DY5T1d').each((i, el) => {
-            console.log("pancho2");
             if (cont < 10) {
               const title = $(el).text();
               //const href = ($(el).find('.href'));
@@ -40,7 +38,6 @@ function tecnologia(){
               const link = 'https://news.google.com'.concat(final);
               Lista1.push(title);
               Lista2.push(link);
-              console.log(title);
               cont += 1;
             }
           });
@@ -61,7 +58,6 @@ function tecnologia(){
           //console.log(Lista2);
           //console.log(Lista3);
           const listafinal = [Lista1, Lista2, Lista3];
-          console.log(listafinal);
           resolve(listafinal);
         }
       });
@@ -647,7 +643,8 @@ function writeITMedicina(response){
 
 }
 
-MoviesF();
+//TecnologiaF();
+//MoviesF();
 //MusicF();
 //NbaF();
 //FutbolF();

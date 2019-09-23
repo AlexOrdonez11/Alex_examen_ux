@@ -116,7 +116,12 @@ class Login extends Component {
               </NavItem>
               <NavItem>
                 <div style={{margin: '0px 3px'}}>
-                <button className="btn btn-success" onClick={TecnologiaF}>Tecnologia</button>
+                <button className="btn btn-success" onClick="refreshPage">Tecnologia</button>
+                <script>
+                function refreshPage(){
+                  window.location.reload()
+                }
+                </script>
                 </div>
               </NavItem>
               <NavItem>

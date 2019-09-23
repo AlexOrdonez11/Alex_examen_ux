@@ -404,94 +404,35 @@ var fs = require('fs');
 //var app = require('./App.js');
 
 export function TecnologiaF(){
-  tecnologia().then(function(response){
-    console.log("panchoo")
-    try{
-      //var del = require('delete');
-      //del.sync(['datos.json'])
-      writeIT(response);
-    }catch(err){
-      console.log(err);
-      writeIT(response);
-    }
-  });
+  tecnologia();
 }
 
 export function MoviesF(){
-  movies().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  movies();
 }
 
 export function MusicF() {
-  music().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  music();
 }
 
 export function NbaF() {
-  nba().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  nba();
 }
 
 export function FutbolF(){
-  futbol().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  futbol();
 }
 
 export function MundoF() {
-  mundo().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  mundo();
 }
 
 export function NutricionF() {
-  nutricion().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  nutricion();
 }
 
 export function MedicinaF() {
-  medicina().then(function(response){
-    try{
-      fs.unlinkSync('datos.json');
-      writeIT(response);
-    }catch(err){
-      writeIT(response);
-    }
-  });
+  medicina();
 }
 
 
