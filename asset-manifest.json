@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Alex_examen_ux/static/css/main.4afeed8a.chunk.css",
-    "main.js": "/Alex_examen_ux/static/js/main.e132ff0e.chunk.js",
-    "main.js.map": "/Alex_examen_ux/static/js/main.e132ff0e.chunk.js.map",
-    "runtime~main.js": "/Alex_examen_ux/static/js/runtime~main.fbc5fb1d.js",
-    "runtime~main.js.map": "/Alex_examen_ux/static/js/runtime~main.fbc5fb1d.js.map",
-    "static/js/2.1e6f0c13.chunk.js": "/Alex_examen_ux/static/js/2.1e6f0c13.chunk.js",
-    "static/js/2.1e6f0c13.chunk.js.map": "/Alex_examen_ux/static/js/2.1e6f0c13.chunk.js.map",
-    "index.html": "/Alex_examen_ux/index.html",
-    "precache-manifest.7a74262d97d1b1f29915cfaf8a800f6c.js": "/Alex_examen_ux/precache-manifest.7a74262d97d1b1f29915cfaf8a800f6c.js",
-    "service-worker.js": "/Alex_examen_ux/service-worker.js",
-    "static/css/main.4afeed8a.chunk.css.map": "/Alex_examen_ux/static/css/main.4afeed8a.chunk.css.map",
-    "static/media/logo.svg": "/Alex_examen_ux/static/media/logo.446f4997.svg"
+    "main.css": "/KingKongNews/static/css/main.1401d146.chunk.css",
+    "main.js": "/KingKongNews/static/js/main.dd72c7b3.chunk.js",
+    "main.js.map": "/KingKongNews/static/js/main.dd72c7b3.chunk.js.map",
+    "runtime~main.js": "/KingKongNews/static/js/runtime~main.409d7c29.js",
+    "runtime~main.js.map": "/KingKongNews/static/js/runtime~main.409d7c29.js.map",
+    "static/js/2.05f295b9.chunk.js": "/KingKongNews/static/js/2.05f295b9.chunk.js",
+    "static/js/2.05f295b9.chunk.js.map": "/KingKongNews/static/js/2.05f295b9.chunk.js.map",
+    "index.html": "/KingKongNews/index.html",
+    "precache-manifest.a864a1ff9fc66b6bc8e2de71f0f34a37.js": "/KingKongNews/precache-manifest.a864a1ff9fc66b6bc8e2de71f0f34a37.js",
+    "service-worker.js": "/KingKongNews/service-worker.js",
+    "static/css/main.1401d146.chunk.css.map": "/KingKongNews/static/css/main.1401d146.chunk.css.map",
+    "static/media/logo.svg": "/KingKongNews/static/media/logo.e518c16b.svg"
   }
 }
