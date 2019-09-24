@@ -11,6 +11,13 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 
 // data
 import { todos } from './datos.json';
+import { todos1 } from './movies.json';
+import { todos2 } from './music.json';
+import { todos3 } from './nba.json';
+import { todos4 } from './futbol.json';
+import { todos5 } from './mundo.json';
+import { todos6 } from './nutricion.json';
+import { todos7 } from './medicina.json';
 
 // subcomponents
 //import TodoForm from './components/TodoForm';
